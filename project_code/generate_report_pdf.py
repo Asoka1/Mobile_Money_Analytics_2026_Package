@@ -630,6 +630,7 @@ def build_pdf():
     story.append(Paragraph("Section 9 – Reproducibility & Verification Confirmation", h1_style))
     story.append(Paragraph(
         "<b>9.1 Submission Deliverables Checklist:</b><br/>"
+        "• <b>GitHub Repository URL:</b> <font color=\"#2563EB\"><u>https://github.com/Asoka1/Mobile_Money_Analytics_2026_Package.git</u></font><br/>"
         "• <b>Full Code Package:</b> All source scripts (<code>capture.py</code>, <code>schema.sql</code>, <code>load_pg.sh</code>, <code>indexes.sql</code>, "
         "<code>prepare_import.py</code>, <code>setup_neo4j.cypher</code>, <code>inspect_account.py</code>, <code>db_connect.py</code>, <code>queries.py</code>, "
         "<code>run_queries.py</code>, <code>compare.py</code>, <code>benchmark.py</code>, <code>improve_q7.py</code>, <code>load_test.py</code>, <code>plot_results.py</code>, "

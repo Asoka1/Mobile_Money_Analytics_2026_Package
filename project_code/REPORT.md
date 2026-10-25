@@ -471,10 +471,11 @@ python3 plot_results.py  # Generates all five PNG charts
 ```
 
 ### 9.2 Integrity Verification & Service Shutdown
+- **GitHub Repository URL:** `https://github.com/Asoka1/Mobile_Money_Analytics_2026_Package.git`
 - **Data Generator Integrity:** Verified that `mobile_money_generator.py` is identical to the distributed source (SHA-256 hash verified unchanged).
 - **Correctness Comparison:** `compare.py` re-run confirms 61 of 61 cases pass with exact match.
 - **Service Teardown:**
   ```bash
   neo4j stop
-  pg_ctl stop -D /usr/local/var/postgresql@16
+  pg_ctl stop -D /usr/local/var/postgresql@17
   ```
