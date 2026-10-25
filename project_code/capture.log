@@ -1,0 +1,120 @@
+============================================================
+dataset_info(): {'period': '1 to 30 September 2026 CAT', 'currency': 'RWF', 'expected_counts': {'customers': 228000, 'accounts': 248000, 'devices': 228600, 'account_devices': 285600, 'transfers': 20003300}, 'fields': {'customers': ('customer_id', 'region'), 'accounts': ('account_id', 'customer_id', 'role'), 'devices': ('device_id', 'access_type'), 'account_devices': ('account_id', 'device_id', 'first_day', 'last_day', 'observations'), 'transfers': ('transfer_id', 'sender_id', 'receiver_id', 'occurred_at', 'amount_rwf')}}
+
+--- customers (first 10) ---
+{'customer_id': 1, 'region': 'Kigali'}
+{'customer_id': 2, 'region': 'Kigali'}
+{'customer_id': 3, 'region': 'Kigali'}
+{'customer_id': 4, 'region': 'Kigali'}
+{'customer_id': 5, 'region': 'Kigali'}
+{'customer_id': 6, 'region': 'Kigali'}
+{'customer_id': 7, 'region': 'Kigali'}
+{'customer_id': 8, 'region': 'Kigali'}
+{'customer_id': 9, 'region': 'Kigali'}
+{'customer_id': 10, 'region': 'Kigali'}
+
+--- accounts (first 10) ---
+{'account_id': 1, 'customer_id': 1, 'role': 'person'}
+{'account_id': 2, 'customer_id': 2, 'role': 'person'}
+{'account_id': 3, 'customer_id': 3, 'role': 'person'}
+{'account_id': 4, 'customer_id': 4, 'role': 'person'}
+{'account_id': 5, 'customer_id': 5, 'role': 'person'}
+{'account_id': 6, 'customer_id': 6, 'role': 'person'}
+{'account_id': 7, 'customer_id': 7, 'role': 'person'}
+{'account_id': 8, 'customer_id': 8, 'role': 'person'}
+{'account_id': 9, 'customer_id': 9, 'role': 'person'}
+{'account_id': 10, 'customer_id': 10, 'role': 'person'}
+
+--- devices (first 10) ---
+{'device_id': 1, 'access_type': 'handset'}
+{'device_id': 2, 'access_type': 'handset'}
+{'device_id': 3, 'access_type': 'handset'}
+{'device_id': 4, 'access_type': 'handset'}
+{'device_id': 5, 'access_type': 'handset'}
+{'device_id': 6, 'access_type': 'handset'}
+{'device_id': 7, 'access_type': 'handset'}
+{'device_id': 8, 'access_type': 'handset'}
+{'device_id': 9, 'access_type': 'handset'}
+{'device_id': 10, 'access_type': 'handset'}
+
+--- account_devices (first 10) ---
+{'account_id': 1, 'device_id': 1, 'first_day': 0, 'last_day': 29, 'observations': 11}
+{'account_id': 2, 'device_id': 1, 'first_day': 0, 'last_day': 29, 'observations': 12}
+{'account_id': 3, 'device_id': 1, 'first_day': 0, 'last_day': 29, 'observations': 13}
+{'account_id': 4, 'device_id': 1, 'first_day': 0, 'last_day': 29, 'observations': 14}
+{'account_id': 5, 'device_id': 1, 'first_day': 0, 'last_day': 29, 'observations': 15}
+{'account_id': 6, 'device_id': 6, 'first_day': 0, 'last_day': 29, 'observations': 16}
+{'account_id': 7, 'device_id': 7, 'first_day': 0, 'last_day': 29, 'observations': 17}
+{'account_id': 8, 'device_id': 8, 'first_day': 11, 'last_day': 29, 'observations': 18}
+{'account_id': 8, 'device_id': 221105, 'first_day': 0, 'last_day': 10, 'observations': 10}
+{'account_id': 9, 'device_id': 9, 'first_day': 0, 'last_day': 29, 'observations': 19}
+
+--- transfers (first 10) ---
+{'transfer_id': 1, 'sender_id': 188503, 'receiver_id': 187907, 'occurred_at': 1788235200, 'amount_rwf': 6700}
+{'transfer_id': 2, 'sender_id': 151724, 'receiver_id': 152176, 'occurred_at': 1788235200, 'amount_rwf': 6700}
+{'transfer_id': 3, 'sender_id': 199087, 'receiver_id': 199200, 'occurred_at': 1788235200, 'amount_rwf': 6800}
+{'transfer_id': 4, 'sender_id': 139778, 'receiver_id': 140682, 'occurred_at': 1788235200, 'amount_rwf': 6300}
+{'transfer_id': 5, 'sender_id': 189061, 'receiver_id': 189287, 'occurred_at': 1788235200, 'amount_rwf': 2600}
+{'transfer_id': 6, 'sender_id': 85014, 'receiver_id': 246711, 'occurred_at': 1788235200, 'amount_rwf': 30600}
+{'transfer_id': 7, 'sender_id': 225854, 'receiver_id': 225258, 'occurred_at': 1788235200, 'amount_rwf': 3800}
+{'transfer_id': 8, 'sender_id': 69746, 'receiver_id': 240010, 'occurred_at': 1788235200, 'amount_rwf': 16700}
+{'transfer_id': 9, 'sender_id': 7642, 'receiver_id': 240005, 'occurred_at': 1788235200, 'amount_rwf': 900}
+{'transfer_id': 10, 'sender_id': 32477, 'receiver_id': 246273, 'occurred_at': 1788235200, 'amount_rwf': 3900}
+
+============================================================
+
+Capturing all streams …
+
+[customers] starting …
+  -> 228,000 rows in 0.6s  3.6 MB  OK
+
+[accounts] starting …
+  -> 248,000 rows in 0.8s  5.2 MB  OK
+
+[devices] starting …
+  -> 228,600 rows in 0.5s  3.6 MB  OK
+
+[account_devices] starting …
+  -> 285,600 rows in 1.2s  6.3 MB  OK
+
+[transfers] starting …
+  transfers: 1,000,000 rows written …
+  transfers: 2,000,000 rows written …
+  transfers: 3,000,000 rows written …
+  transfers: 4,000,000 rows written …
+  transfers: 5,000,000 rows written …
+  transfers: 6,000,000 rows written …
+  transfers: 7,000,000 rows written …
+  transfers: 8,000,000 rows written …
+  transfers: 9,000,000 rows written …
+  transfers: 10,000,000 rows written …
+  transfers: 11,000,000 rows written …
+  transfers: 12,000,000 rows written …
+  transfers: 13,000,000 rows written …
+  transfers: 14,000,000 rows written …
+  transfers: 15,000,000 rows written …
+  transfers: 16,000,000 rows written …
+  transfers: 17,000,000 rows written …
+  transfers: 18,000,000 rows written …
+  transfers: 19,000,000 rows written …
+  transfers: 20,000,000 rows written …
+  -> 20,003,300 rows in 118.2s  780.2 MB  OK
+
+============================================================
+CAPTURE SUMMARY
+============================================================
+  customers       :      228,000 rows       3.6 MB     0.6s  OK
+  accounts        :      248,000 rows       5.2 MB     0.8s  OK
+  devices         :      228,600 rows       3.6 MB     0.5s  OK
+  account_devices :      285,600 rows       6.3 MB     1.2s  OK
+  transfers       :   20,003,300 rows     780.2 MB   118.2s  OK
+
+  Total rows: 20,993,500
+  Total time: 121.3s
+
+TRANSFER AUDIT TOTALS
+  count             : 20,003,300
+  earliest occurred : 1788235200
+  latest occurred   : 1790798399
+  sum amount_rwf    : 231,482,327,870 RWF
+============================================================

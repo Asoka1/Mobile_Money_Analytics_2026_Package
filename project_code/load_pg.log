@@ -1,0 +1,110 @@
+=== Loading into database: mobile_money ===
+=== CSV directory: /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code ===
+SET
+psql:schema.sql:12: NOTICE:  table "transfers" does not exist, skipping
+DROP TABLE
+psql:schema.sql:13: NOTICE:  table "account_devices" does not exist, skipping
+DROP TABLE
+psql:schema.sql:14: NOTICE:  table "accounts" does not exist, skipping
+DROP TABLE
+psql:schema.sql:15: NOTICE:  table "devices" does not exist, skipping
+DROP TABLE
+psql:schema.sql:16: NOTICE:  table "customers" does not exist, skipping
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+CREATE TABLE
+Section 2.1: Schema, primary keys, foreign keys and check constraints created.
+
+--- Bulk loading (COPY) ---
+COPY 228000
+
+real	0m0.655s
+user	0m0.036s
+sys	0m0.022s
+COPY 228600
+
+real	0m0.615s
+user	0m0.034s
+sys	0m0.019s
+COPY 248000
+
+real	0m3.034s
+user	0m0.038s
+sys	0m0.023s
+COPY 285600
+
+real	0m6.410s
+user	0m0.043s
+sys	0m0.029s
+COPY 20003300
+
+real	7m20.207s
+user	0m2.343s
+sys	0m2.278s
+
+--- Section 2.2: Creating indexes and running ANALYZE ---
+SET
+SET
+--- Creating index idx_acc_cust on accounts (customer_id, account_id) ---
+CREATE INDEX
+--- Creating index idx_ad_dev on account_devices (device_id, account_id) ---
+CREATE INDEX
+--- Creating covering index idx_t_sender on transfers (sender_id, occurred_at) INCLUDE (receiver_id, amount_rwf, transfer_id) ---
+CREATE INDEX
+--- Creating covering index idx_t_receiver on transfers (receiver_id, occurred_at) INCLUDE (sender_id, amount_rwf, transfer_id) ---
+CREATE INDEX
+--- Creating BRIN index idx_t_brin on transfers USING brin (occurred_at) ---
+CREATE INDEX
+--- Running ANALYZE ---
+ANALYZE
+
+real	0m43.753s
+user	0m0.018s
+sys	0m0.012s
+
+=== Row count verification ===
+       tbl       |    n     
+-----------------+----------
+ customers       |   228000
+ accounts        |   248000
+ devices         |   228600
+ account_devices |   285600
+ transfers       | 20003300
+(5 rows)
+
+
+=== Account roles ===
+   role   | count  
+----------+--------
+ agent    |   2000
+ merchant |   6000
+ person   | 240000
+(3 rows)
+
+
+=== Transfer audit totals ===
+ transfer_count | earliest_occurred_at | latest_occurred_at | sum_amount_rwf 
+----------------+----------------------+--------------------+----------------
+       20003300 |           1788235200 |         1790798399 |   231482327870
+(1 row)
+
+
+=== Database sizes (GB = 10^9 bytes) ===
+ db_total_size 
+---------------
+ 3554 MB
+(1 row)
+
+   table_name    | total_size | table_size | index_size 
+-----------------+------------+------------+------------
+ transfers       | 3471 MB    | 1150 MB    | 2321 MB
+ account_devices | 24 MB      | 12 MB      | 12 MB
+ accounts        | 21 MB      | 11 MB      | 11 MB
+ devices         | 15 MB      | 9984 kB    | 5072 kB
+ customers       | 15 MB      | 9984 kB    | 5056 kB
+(5 rows)
+
+=== Load complete ===

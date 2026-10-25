@@ -1,0 +1,156 @@
+
+======================================================================
+Q1  Account activity in specified hour
+======================================================================
+Set   Account Date  PG tx_count   PG total_rwf NEO tx_count  NEO total_rwf
+A         998    6            1        200,000            1        200,000
+B      147228   13            1      1,050,000            1      1,050,000
+C      206978    8            1        300,000            1        300,000
+D      237998    6            1         45,000            1         45,000
+E      144228   13            1         40,000            1         40,000
+F      203978    8            1         30,000            1         30,000
+
+======================================================================
+Q2  Daily activity (full month)
+======================================================================
+Day            PG count     PG total_rwf  NEO count    NEO total_rwf
+2026-09-01      666,667    7,683,326,000    666,667    7,683,326,000
+2026-09-02      666,667    7,678,846,900    666,667    7,678,846,900
+2026-09-03      666,666    7,665,877,900    666,666    7,665,877,900
+2026-09-04      666,667    7,665,199,000    666,667    7,665,199,000
+2026-09-05      666,667    7,679,091,900    666,667    7,679,091,900
+2026-09-06      666,816    7,741,994,180    666,816    7,741,994,180
+2026-09-07      666,817    7,726,576,180    666,817    7,726,576,180
+2026-09-08      666,907    7,777,047,990    666,907    7,777,047,990
+2026-09-09      666,906    7,783,400,210    666,906    7,783,400,210
+2026-09-10      666,997    7,807,170,170    666,997    7,807,170,170
+2026-09-11      666,847    7,746,125,100    666,847    7,746,125,100
+2026-09-12      666,936    7,783,593,400    666,936    7,783,593,400
+2026-09-13      666,937    7,800,995,510    666,937    7,800,995,510
+2026-09-14      666,997    7,856,644,775    666,997    7,856,644,775
+2026-09-15      666,996    7,859,428,355    666,996    7,859,428,355
+2026-09-16      666,787    7,683,087,200    666,787    7,683,087,200
+2026-09-17      666,757    7,699,710,100    666,757    7,699,710,100
+2026-09-18      666,786    7,677,843,700    666,786    7,677,843,700
+2026-09-19      666,757    7,665,841,400    666,757    7,665,841,400
+2026-09-20      666,757    7,663,404,900    666,757    7,663,404,900
+2026-09-21      666,726    7,696,315,800    666,726    7,696,315,800
+2026-09-22      666,727    7,703,220,100    666,727    7,703,220,100
+2026-09-23      666,697    7,697,325,900    666,697    7,697,325,900
+2026-09-24      666,726    7,668,636,000    666,726    7,668,636,000
+2026-09-25      666,697    7,677,231,000    666,697    7,677,231,000
+2026-09-26      666,697    7,671,715,700    666,697    7,671,715,700
+2026-09-27      666,696    7,692,655,900    666,696    7,692,655,900
+2026-09-28      666,667    7,676,184,700    666,667    7,676,184,700
+2026-09-29      666,667    7,668,892,500    666,667    7,668,892,500
+2026-09-30      666,666    7,684,945,400    666,666    7,684,945,400
+TOTALS       20,003,300
+
+======================================================================
+Q3  Shared devices
+======================================================================
+Set A (account 998): PG=4 rows  NEO=4 rows
+  First row PG:  (8917, 228001, 'handset', 0, 29)
+  First row NEO: {'other_account_id': 8917, 'd.device_id': 228001, 'd.access_type': 'handset', 'overlap_start': 0, 'overlap_end': 29}
+Set B (account 147228): PG=9 rows  NEO=9 rows
+  First row PG:  (147226, 147226, 'handset', 0, 29)
+  First row NEO: {'other_account_id': 147226, 'd.device_id': 147226, 'd.access_type': 'handset', 'overlap_start': 0, 'overlap_end': 29}
+Set C (account 206978): PG=9 rows  NEO=9 rows
+  First row PG:  (6573, 228043, 'handset', 0, 29)
+  First row NEO: {'other_account_id': 6573, 'd.device_id': 228043, 'd.access_type': 'handset', 'overlap_start': 0, 'overlap_end': 29}
+Set D (account 237998): PG=4 rows  NEO=4 rows
+  First row PG:  (5917, 228301, 'handset', 0, 29)
+  First row NEO: {'other_account_id': 5917, 'd.device_id': 228301, 'd.access_type': 'handset', 'overlap_start': 0, 'overlap_end': 29}
+Set E (account 144228): PG=9 rows  NEO=9 rows
+  First row PG:  (144226, 144226, 'handset', 0, 29)
+  First row NEO: {'other_account_id': 144226, 'd.device_id': 144226, 'd.access_type': 'handset', 'overlap_start': 0, 'overlap_end': 29}
+Set F (account 203978): PG=9 rows  NEO=9 rows
+  First row PG:  (3573, 228343, 'handset', 0, 29)
+  First row NEO: {'other_account_id': 3573, 'd.device_id': 228343, 'd.access_type': 'handset', 'overlap_start': 0, 'overlap_end': 29}
+
+======================================================================
+Q4  Ownership and device network
+======================================================================
+  Set A (acct    998) depth  4: PG=     10  NEO=     10
+  Set A (acct    998) depth  6: PG=     43  NEO=     43
+  Set A (acct    998) depth  8: PG=    175  NEO=    175
+  Set A (acct    998) depth 10: PG=    187  NEO=    187
+  Set B (acct 147228) depth  4: PG=     46  NEO=     46
+  Set B (acct 147228) depth  6: PG=    178  NEO=    178
+  Set B (acct 147228) depth  8: PG=    188  NEO=    188
+  Set B (acct 147228) depth 10: PG=    228  NEO=    228
+  Set C (acct 206978) depth  4: PG=    146  NEO=    146
+  Set C (acct 206978) depth  6: PG=    483  NEO=    483
+  Set C (acct 206978) depth  8: PG=    832  NEO=    832
+  Set C (acct 206978) depth 10: PG=  1,433  NEO=  1,433
+  Set D (acct 237998) depth  4: PG=     10  NEO=     10
+  Set D (acct 237998) depth  6: PG=     44  NEO=     44
+  Set D (acct 237998) depth  8: PG=    180  NEO=    180
+  Set D (acct 237998) depth 10: PG=    192  NEO=    192
+  Set E (acct 144228) depth  4: PG=     47  NEO=     47
+  Set E (acct 144228) depth  6: PG=    183  NEO=    183
+  Set E (acct 144228) depth  8: PG=    193  NEO=    193
+  Set E (acct 144228) depth 10: PG=    230  NEO=    230
+  Set F (acct 203978) depth  4: PG=    147  NEO=    147
+  Set F (acct 203978) depth  6: PG=    488  NEO=    488
+  Set F (acct 203978) depth  8: PG=    837  NEO=    837
+  Set F (acct 203978) depth 10: PG=  1,426  NEO=  1,426
+
+======================================================================
+Q5  Rapid onward payments
+======================================================================
+Set A (account 998, day 6): PG=1 chains  NEO=1 chains
+  Example chain: (20000001, 20000002, 20000003, 24755)
+Set B (account 147228, day 13): PG=1 chains  NEO=1 chains
+  Example chain: (20000092, 20000093, 20000094, 170985)
+Set C (account 206978, day 8): PG=1 chains  NEO=1 chains
+  Example chain: (20000229, 20000230, 20000231, 230735)
+Set D (account 237998, day 6): PG=0 chains  NEO=0 chains
+Set E (account 144228, day 13): PG=0 chains  NEO=0 chains
+Set F (account 203978, day 8): PG=0 chains  NEO=0 chains
+
+======================================================================
+Q6  Circular payments
+======================================================================
+Set A (account 998, day 6): PG=1 cycles  NEO=1 cycles
+  Example cycle: ([20000001, 20000002, 20000003, 20000004], 4)
+Set B (account 147228, day 13): PG=0 cycles  NEO=0 cycles
+Set C (account 206978, day 8): PG=1 cycles  NEO=1 cycles
+  Example cycle: ([20000229, 20000230, 20000231, 20000232, 20000233, 20000234], 6)
+Set D (account 237998, day 6): PG=0 cycles  NEO=0 cycles
+Set E (account 144228, day 13): PG=0 cycles  NEO=0 cycles
+Set F (account 203978, day 8): PG=0 cycles  NEO=0 cycles
+
+======================================================================
+Q7  Shortest transfer connection
+======================================================================
+  Set A (998->24755) bound=4: PG=3  NEO=3
+    PG path:  ([998, 8917, 16836, 24755], 3)
+    NEO path: {'path_ids': [998, 8917, 16836, 24755], 'length': 3}
+  Set A (998->24755) bound=6: PG=3  NEO=3
+    PG path:  ([998, 8917, 16836, 24755], 3)
+    NEO path: {'path_ids': [998, 8917, 16836, 24755], 'length': 3}
+  Set B (147228->186823) bound=4: PG=None  NEO=None
+  Set B (147228->186823) bound=6: PG=5  NEO=5
+    PG path:  ([147228, 148019, 147423, 148101, 178904, 186823], 5)
+    NEO path: {'path_ids': [147228, 147906, 147197, 148101, 178904, 186823], 'length': 5}
+  Set C (206978->6573) bound=4: PG=None  NEO=None
+  Set C (206978->6573) bound=6: PG=5  NEO=5
+    PG path:  ([206978, 214897, 222816, 230735, 238654, 6573], 5)
+    NEO path: {'path_ids': [206978, 214897, 222816, 230735, 238654, 6573], 'length': 5}
+  Set D (237998->21755) bound=4: PG=3  NEO=3
+    PG path:  ([237998, 5917, 13836, 21755], 3)
+    NEO path: {'path_ids': [237998, 5917, 13836, 21755], 'length': 3}
+  Set D (237998->21755) bound=6: PG=3  NEO=3
+    PG path:  ([237998, 5917, 13836, 21755], 3)
+    NEO path: {'path_ids': [237998, 5917, 13836, 21755], 'length': 3}
+  Set E (144228->183823) bound=4: PG=None  NEO=None
+  Set E (144228->183823) bound=6: PG=5  NEO=5
+    PG path:  ([144228, 152147, 160066, 167985, 175904, 183823], 5)
+    NEO path: {'path_ids': [144228, 152147, 160066, 167985, 175904, 183823], 'length': 5}
+  Set F (203978->3573) bound=4: PG=None  NEO=None
+  Set F (203978->3573) bound=6: PG=5  NEO=5
+    PG path:  ([203978, 211897, 219816, 227735, 235654, 3573], 5)
+    NEO path: {'path_ids': [203978, 211897, 219816, 227735, 235654, 3573], 'length': 5}
+
+All queries complete.

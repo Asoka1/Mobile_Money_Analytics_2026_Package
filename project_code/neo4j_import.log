@@ -1,0 +1,151 @@
+Neo4j version: 5.26.0
+Importing the contents of these files into /Users/apple2019/neo4j-community-5.26.0/data/databases/neo4j:
+Nodes:
+  [Account]:
+  /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_accounts.csv
+
+  [Customer]:
+  /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_customers.csv
+
+  [Device]:
+  /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_devices.csv
+
+Relationships:
+  TRANSFER:
+  /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_transfers.csv
+
+  USED_DEVICE:
+  /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_used_device.csv
+
+  OWNS:
+  /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_owns.csv
+
+
+Available resources:
+  Total machine memory: 16.00GiB
+  Free machine memory: 2.048GiB
+  Max heap memory : 3.556GiB
+  Max worker threads: 12
+  Configured max memory: 965.7MiB
+  High parallel IO: true
+
+Cypher type normalization is enabled (disable with --normalize-types=false):
+  Property type of 'first_day' normalized from 'int' --> 'long' in /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_used_device.csv
+  Property type of 'last_day' normalized from 'int' --> 'long' in /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_used_device.csv
+  Property type of 'observations' normalized from 'int' --> 'long' in /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_used_device.csv
+
+Import starting 2026-10-25 12:53:40.789+0200
+  Estimated number of nodes: 706.10 k
+  Estimated number of node properties: 1.41 M
+  Estimated number of relationships: 21.86 M
+  Estimated number of relationship properties: 64.84 M
+  Estimated disk space usage: 1.555GiB
+  Estimated required memory usage: 1.006GiB
+
+(1/4) Node import 2026-10-25 12:53:40.806+0200
+  Estimated number of nodes: 706.10 k
+  Estimated disk space usage: 38.38MiB
+  Estimated required memory usage: 1.006GiB
+.......... .......... .......... .......... ..........   5% ∆1s 37ms [1s 37ms]
+.......... .......... .......... .......... ..........  10% ∆1ms [1s 38ms]
+.......... ...-...... .......... .......... ..........  15% ∆243ms [1s 282ms]
+.......... .......... .......... .......... ..........  20% ∆0ms [1s 282ms]
+.......... .......... .......... .......... ..........  25% ∆0ms [1s 282ms]
+.......... .......... .......... .......... ..........  30% ∆404ms [1s 687ms]
+.......... .......... .......... .......... ..........  35% ∆0ms [1s 687ms]
+.......... .......... .......... .......... ..........  40% ∆0ms [1s 687ms]
+.......... .......... .......... .......... ..........  45% ∆0ms [1s 688ms]
+.......... .......... .......... .......... ..........  50% ∆0ms [1s 688ms]
+.......... .......... .......... .......... ..........  55% ∆0ms [1s 688ms]
+.......... .......... .......... .......... ..........  60% ∆0ms [1s 688ms]
+.......... .......... .......... .......... ..........  65% ∆71ms [1s 760ms]
+.......... .......... .......... .......... ..........  70% ∆0ms [1s 760ms]
+.......... .......... .......... .......... ..........  75% ∆0ms [1s 761ms]
+.......... .......... .......... .......... ..........  80% ∆0ms [1s 761ms]
+.......... .......... .......... .......... ..........  85% ∆0ms [1s 761ms]
+.......... .......... .......... .......... ..........  90% ∆0ms [1s 761ms]
+.......... .......... .......... .......... ..........  95% ∆0ms [1s 761ms]
+.......... .......... .......... .......... .......... 100% ∆0ms [1s 761ms]
+Node import COMPLETED in 1s 765ms
+
+(2/4) Relationship import 2026-10-25 12:53:42.572+0200
+  Estimated number of relationships: 21.86 M
+  Estimated disk space usage: 1.517GiB
+  Estimated required memory usage: 1.006GiB
+.......... .......... .......... .......... ..........   5% ∆2s 30ms [2s 30ms]
+.......... .......... .......... .......... ..........  10% ∆604ms [2s 634ms]
+.......... .......... .......... .......... ..........  15% ∆607ms [3s 242ms]
+.......... .......... .......... .......... ..........  20% ∆601ms [3s 844ms]
+.......... .......... .......... .......... ..........  25% ∆813ms [4s 657ms]
+.......... .......... .......... .......... ..........  30% ∆809ms [5s 467ms]
+.......... .......... .......... .......... ..........  35% ∆0ms [5s 467ms]
+.......... .......... .......... .......... ..........  40% ∆601ms [6s 68ms]
+.......... .......... .......... .......... ..........  45% ∆802ms [6s 870ms]
+.......... .......... .......... .......... ..........  50% ∆603ms [7s 474ms]
+.......... .......... .......... .......... ..........  55% ∆1s 6ms [8s 480ms]
+.......... .......... .......... .......... ..........  60% ∆1s 12ms [9s 492ms]
+.......... .......... .......... .......... ..........  65% ∆405ms [9s 897ms]
+.......... .......... .......... .......... ..........  70% ∆603ms [10s 501ms]
+.......... .......... .......... .......... ..........  75% ∆804ms [11s 306ms]
+.......... .......... .......... .......... ..........  80% ∆603ms [11s 909ms]
+.......... .......... .......... .......... ..........  85% ∆605ms [12s 515ms]
+.......... .......... .......... .......... ..........  90% ∆807ms [13s 323ms]
+.......... .......... .......... .......... ..........  95% ∆99ms [13s 422ms]
+.......... .......... .......... .......... .......... 100% ∆0ms [13s 422ms]
+Relationship import COMPLETED in 13s 423ms
+
+(3/4) Relationship linking 2026-10-25 12:53:55.996+0200
+  Estimated required memory usage: 1.003GiB
+.......... .......... .......... .......... ..........   5% ∆1s 9ms [1s 9ms]
+.......... .......... .......... .......... ..........  10% ∆1s 1ms [2s 10ms]
+.......... .......... .......... .......... ..........  15% ∆817ms [2s 828ms]
+.......... .-.-...... .-..-..... .......... ..........  20% ∆7s 32ms [9s 861ms]
+.......... .......... .......... .......... ..........  25% ∆1s 17ms [10s 878ms]
+.......... .......... .......... .......... ..........  30% ∆813ms [11s 691ms]
+.......... .......... .......... .......... ..........  35% ∆409ms [12s 100ms]
+.......... .......... .......... .......... ..........  40% ∆407ms [12s 507ms]
+.......... .......... .......... .......... ..........  45% ∆605ms [13s 113ms]
+.......... .......... .......... .......... ..........  50% ∆410ms [13s 523ms]
+.......... .......... .-........ .......... ..........  55% ∆1s 1ms [14s 524ms]
+.......... .......... .......... .......... ..........  60% ∆1s 19ms [15s 544ms]
+.......... .......... .......... .......... ..........  65% ∆605ms [16s 149ms]
+.......... .......... .......... .......... ..........  70% ∆400ms [16s 550ms]
+.......... .......... .......... .......... ..........  75% ∆609ms [17s 160ms]
+.......... .......... .......... .......... ..........  80% ∆607ms [17s 768ms]
+.......... .......... .......... .......... ..........  85% ∆409ms [18s 177ms]
+.......... .......... .......... .......... ..........  90% ∆430ms [18s 608ms]
+.......... .......... .......... .......... ..........  95% ∆0ms [18s 608ms]
+.......... .......... .......... .......... .......... 100% ∆0ms [18s 608ms]
+Relationship linking COMPLETED in 18s 608ms
+
+(4/4) Post processing 2026-10-25 12:54:14.605+0200
+  Estimated required memory usage: 1020MiB
+-......... ......-... .......... .......... ..........   5% ∆2s 474ms [2s 474ms]
+.......... .......... .......... .......... ..........  10% ∆403ms [2s 878ms]
+.......... .......... .......... .......... ..........  15% ∆202ms [3s 80ms]
+.......... .......... .......... .......... ..........  20% ∆405ms [3s 486ms]
+.......... .......... .......... .......... ..........  25% ∆405ms [3s 891ms]
+.......... .......... .......... .......... ..........  30% ∆202ms [4s 93ms]
+.......... .......... .......... .......... ..........  35% ∆0ms [4s 93ms]
+.......... .......... .......... .......... ..........  40% ∆0ms [4s 93ms]
+.......... .......... .......... .......... ..........  45% ∆205ms [4s 298ms]
+.......... .......... .......... .......... ..........  50% ∆0ms [4s 299ms]
+.......... .......... .......... .......... ..........  55% ∆202ms [4s 501ms]
+.......... .......... .......... .......... ..........  60% ∆0ms [4s 501ms]
+.......... .......... .......... .......... ..........  65% ∆200ms [4s 702ms]
+.......... .......... .......... .......... ..........  70% ∆0ms [4s 702ms]
+.......... .......... .......... .......... ..........  75% ∆0ms [4s 702ms]
+.......... .......... .......... .......... ..........  80% ∆200ms [4s 902ms]
+.......... .......... .......... .......... ..........  85% ∆0ms [4s 902ms]
+.......... .......... .......... .......... ..........  90% ∆257ms [5s 160ms]
+.......... .......... .......... .......... ..........  95% ∆0ms [5s 160ms]
+.......... .......... .......... .......... .......... 100% ∆0ms [5s 160ms]
+Post processing COMPLETED in 5s 160ms
+
+
+IMPORT DONE in 40s 211ms. 
+Imported:
+  704600 nodes
+  20536900 relationships
+  62275900 properties
+Peak memory usage: 1.039GiB

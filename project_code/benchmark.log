@@ -1,0 +1,645 @@
+
+============================================================
+ENGINE: POSTGRESQL
+============================================================
+
+  Case: Q1-B
+    warm-up 1: 0.01s  rows=1  status=OK
+    warm-up 2: 0.00s  rows=1  status=OK
+    warm-up 3: 0.00s  rows=1  status=OK
+    run 1: 0.5 ms  rows=1
+    run 2: 0.5 ms  rows=1
+    run 3: 0.6 ms  rows=1
+    run 4: 0.4 ms  rows=1
+    run 5: 0.4 ms  rows=1
+    → median=0.5ms  min=0.4ms  max=0.6ms
+
+  Case: Q1-E
+    warm-up 1: 0.00s  rows=1  status=OK
+    warm-up 2: 0.00s  rows=1  status=OK
+    warm-up 3: 0.00s  rows=1  status=OK
+    run 1: 0.3 ms  rows=1
+    run 2: 0.2 ms  rows=1
+    run 3: 0.2 ms  rows=1
+    run 4: 0.2 ms  rows=1
+    run 5: 0.2 ms  rows=1
+    → median=0.2ms  min=0.2ms  max=0.3ms
+
+  Case: Q2-month
+    warm-up 1: 8.83s  rows=30  status=OK
+    warm-up 2: 8.34s  rows=30  status=OK
+    warm-up 3: 8.39s  rows=30  status=OK
+    run 1: 8273.2 ms  rows=30
+    run 2: 8258.4 ms  rows=30
+    run 3: 8156.9 ms  rows=30
+    run 4: 8222.6 ms  rows=30
+    run 5: 8155.5 ms  rows=30
+    → median=8222.6ms  min=8155.5ms  max=8273.2ms
+
+  Case: Q3-B
+    warm-up 1: 0.01s  rows=9  status=OK
+    warm-up 2: 0.00s  rows=9  status=OK
+    warm-up 3: 0.00s  rows=9  status=OK
+    run 1: 1.0 ms  rows=9
+    run 2: 1.0 ms  rows=9
+    run 3: 1.2 ms  rows=9
+    run 4: 0.8 ms  rows=9
+    run 5: 0.8 ms  rows=9
+    → median=1.0ms  min=0.8ms  max=1.2ms
+
+  Case: Q3-E
+    warm-up 1: 0.01s  rows=9  status=OK
+    warm-up 2: 0.00s  rows=9  status=OK
+    warm-up 3: 0.00s  rows=9  status=OK
+    run 1: 0.3 ms  rows=9
+    run 2: 0.3 ms  rows=9
+    run 3: 0.4 ms  rows=9
+    run 4: 0.4 ms  rows=9
+    run 5: 0.4 ms  rows=9
+    → median=0.4ms  min=0.3ms  max=0.4ms
+
+  Case: Q4-B-d4
+    warm-up 1: 2.14s  rows=5  status=OK
+    warm-up 2: 2.03s  rows=5  status=OK
+    warm-up 3: 2.03s  rows=5  status=OK
+    run 1: 2030.8 ms  rows=5
+    run 2: 2039.4 ms  rows=5
+    run 3: 2154.5 ms  rows=5
+    run 4: 2057.9 ms  rows=5
+    run 5: 2050.0 ms  rows=5
+    → median=2050.0ms  min=2030.8ms  max=2154.5ms
+
+  Case: Q4-B-d6
+    warm-up 1: 3.08s  rows=5  status=OK
+    warm-up 2: 3.07s  rows=5  status=OK
+    warm-up 3: 3.17s  rows=5  status=OK
+    run 1: 3022.4 ms  rows=5
+    run 2: 3043.6 ms  rows=5
+    run 3: 3034.1 ms  rows=5
+    run 4: 3164.7 ms  rows=5
+    run 5: 3012.9 ms  rows=5
+    → median=3034.1ms  min=3012.9ms  max=3164.7ms
+
+  Case: Q4-B-d8
+    warm-up 1: 4.07s  rows=5  status=OK
+    warm-up 2: 4.10s  rows=5  status=OK
+    warm-up 3: 4.19s  rows=5  status=OK
+    run 1: 4126.4 ms  rows=5
+    run 2: 4082.2 ms  rows=5
+    run 3: 4168.0 ms  rows=5
+    run 4: 4054.9 ms  rows=5
+    run 5: 4051.7 ms  rows=5
+    → median=4082.2ms  min=4051.7ms  max=4168.0ms
+
+  Case: Q4-B-d10
+    warm-up 1: 5.21s  rows=5  status=OK
+    warm-up 2: 5.04s  rows=5  status=OK
+    warm-up 3: 5.05s  rows=5  status=OK
+    run 1: 5430.3 ms  rows=5
+    run 2: 5144.9 ms  rows=5
+    run 3: 5233.3 ms  rows=5
+    run 4: 5097.9 ms  rows=5
+    run 5: 5088.6 ms  rows=5
+    → median=5144.9ms  min=5088.6ms  max=5430.3ms
+
+  Case: Q4-E-d4
+    warm-up 1: 2.17s  rows=5  status=OK
+    warm-up 2: 2.04s  rows=5  status=OK
+    warm-up 3: 2.06s  rows=5  status=OK
+    run 1: 2021.9 ms  rows=5
+    run 2: 2019.9 ms  rows=5
+    run 3: 2018.7 ms  rows=5
+    run 4: 2154.2 ms  rows=5
+    run 5: 2019.0 ms  rows=5
+    → median=2019.9ms  min=2018.7ms  max=2154.2ms
+
+  Case: Q4-E-d6
+    warm-up 1: 3.04s  rows=5  status=OK
+    warm-up 2: 3.12s  rows=5  status=OK
+    warm-up 3: 3.06s  rows=5  status=OK
+    run 1: 3330.9 ms  rows=5
+    run 2: 3278.0 ms  rows=5
+    run 3: 3298.6 ms  rows=5
+    run 4: 3139.6 ms  rows=5
+    run 5: 3435.8 ms  rows=5
+    → median=3298.6ms  min=3139.6ms  max=3435.8ms
+
+  Case: Q4-E-d8
+    warm-up 1: 4.03s  rows=5  status=OK
+    warm-up 2: 4.16s  rows=5  status=OK
+    warm-up 3: 4.29s  rows=5  status=OK
+    run 1: 4093.1 ms  rows=5
+    run 2: 4393.3 ms  rows=5
+    run 3: 4233.7 ms  rows=5
+    run 4: 4092.3 ms  rows=5
+    run 5: 4075.1 ms  rows=5
+    → median=4093.1ms  min=4075.1ms  max=4393.3ms
+
+  Case: Q4-E-d10
+    warm-up 1: 5.16s  rows=5  status=OK
+    warm-up 2: 5.11s  rows=5  status=OK
+    warm-up 3: 5.13s  rows=5  status=OK
+    run 1: 5182.4 ms  rows=5
+    run 2: 5247.5 ms  rows=5
+    run 3: 5109.3 ms  rows=5
+    run 4: 5271.6 ms  rows=5
+    run 5: 5242.8 ms  rows=5
+    → median=5242.8ms  min=5109.3ms  max=5271.6ms
+
+  Case: Q5-B
+    warm-up 1: 0.00s  rows=1  status=OK
+    warm-up 2: 0.00s  rows=1  status=OK
+    warm-up 3: 0.00s  rows=1  status=OK
+    run 1: 1.4 ms  rows=1
+    run 2: 1.5 ms  rows=1
+    run 3: 1.6 ms  rows=1
+    run 4: 1.3 ms  rows=1
+    run 5: 1.2 ms  rows=1
+    → median=1.4ms  min=1.2ms  max=1.6ms
+
+  Case: Q5-E
+    warm-up 1: 0.00s  rows=0  status=OK
+    warm-up 2: 0.00s  rows=0  status=OK
+    warm-up 3: 0.00s  rows=0  status=OK
+    run 1: 0.3 ms  rows=0
+    run 2: 0.4 ms  rows=0
+    run 3: 0.3 ms  rows=0
+    run 4: 0.3 ms  rows=0
+    run 5: 0.3 ms  rows=0
+    → median=0.3ms  min=0.3ms  max=0.4ms
+
+  Case: Q6-B
+    warm-up 1: 0.00s  rows=0  status=OK
+    warm-up 2: 0.00s  rows=0  status=OK
+    warm-up 3: 0.00s  rows=0  status=OK
+    run 1: 0.8 ms  rows=0
+    run 2: 0.9 ms  rows=0
+    run 3: 1.0 ms  rows=0
+    run 4: 0.6 ms  rows=0
+    run 5: 0.6 ms  rows=0
+    → median=0.8ms  min=0.6ms  max=1.0ms
+
+  Case: Q6-E
+    warm-up 1: 0.00s  rows=0  status=OK
+    warm-up 2: 0.00s  rows=0  status=OK
+    warm-up 3: 0.00s  rows=0  status=OK
+    run 1: 0.3 ms  rows=0
+    run 2: 0.8 ms  rows=0
+    run 3: 0.2 ms  rows=0
+    run 4: 0.2 ms  rows=0
+    run 5: 0.3 ms  rows=0
+    → median=0.3ms  min=0.2ms  max=0.8ms
+
+  Case: Q7-B-b4
+    warm-up 1: 0.46s  rows=0  status=OK
+    warm-up 2: 0.40s  rows=0  status=OK
+    warm-up 3: 0.40s  rows=0  status=OK
+    run 1: 399.3 ms  rows=0
+    run 2: 398.8 ms  rows=0
+    run 3: 534.0 ms  rows=0
+    run 4: 400.2 ms  rows=0
+    run 5: 400.7 ms  rows=0
+    → median=400.2ms  min=398.8ms  max=534.0ms
+
+  Case: Q7-B-b6
+    warm-up 1: 35.33s  rows=1  status=OK
+    warm-up 2: 35.19s  rows=1  status=OK
+    warm-up 3: 35.27s  rows=1  status=OK
+    run 1: 35398.1 ms  rows=1
+    run 2: 35253.3 ms  rows=1
+    run 3: 35490.5 ms  rows=1
+    run 4: 35471.0 ms  rows=1
+    run 5: 35057.2 ms  rows=1
+    → median=35398.1ms  min=35057.2ms  max=35490.5ms
+
+  Case: Q7-E-b4
+    warm-up 1: 0.44s  rows=0  status=OK
+    warm-up 2: 0.42s  rows=0  status=OK
+    warm-up 3: 0.42s  rows=0  status=OK
+    run 1: 417.1 ms  rows=0
+    run 2: 414.1 ms  rows=0
+    run 3: 414.7 ms  rows=0
+    run 4: 413.2 ms  rows=0
+    run 5: 414.3 ms  rows=0
+    → median=414.3ms  min=413.2ms  max=417.1ms
+
+  Case: Q7-E-b6
+    warm-up 1: 36.71s  rows=1  status=OK
+    warm-up 2: 38.09s  rows=1  status=OK
+    warm-up 3: 38.63s  rows=1  status=OK
+    run 1: 36131.1 ms  rows=1
+    run 2: 36002.3 ms  rows=1
+    run 3: 39167.4 ms  rows=1
+    run 4: 36599.0 ms  rows=1
+    run 5: 36066.0 ms  rows=1
+    → median=36131.1ms  min=36002.3ms  max=39167.4ms
+
+============================================================
+ENGINE: NEO4J
+============================================================
+
+  Case: Q1-B
+    warm-up 1: 0.02s  rows=1  status=OK
+    warm-up 2: 0.00s  rows=1  status=OK
+    warm-up 3: 0.00s  rows=1  status=OK
+    run 1: 3.3 ms  rows=1
+    run 2: 3.6 ms  rows=1
+    run 3: 3.3 ms  rows=1
+    run 4: 3.5 ms  rows=1
+    run 5: 3.8 ms  rows=1
+    → median=3.5ms  min=3.3ms  max=3.8ms
+
+  Case: Q1-E
+    warm-up 1: 0.00s  rows=1  status=OK
+    warm-up 2: 0.00s  rows=1  status=OK
+    warm-up 3: 0.00s  rows=1  status=OK
+    run 1: 4.0 ms  rows=1
+    run 2: 3.4 ms  rows=1
+    run 3: 3.6 ms  rows=1
+    run 4: 3.6 ms  rows=1
+    run 5: 3.4 ms  rows=1
+    → median=3.6ms  min=3.4ms  max=4.0ms
+
+  Case: Q2-month
+    warm-up 1: 97.75s  rows=30  status=OK
+    warm-up 2: 93.23s  rows=30  status=OK
+    warm-up 3: 94.32s  rows=30  status=OK
+    run 1: TIMEOUT
+    run 2: TIMEOUT
+    run 3: TIMEOUT
+    run 4: TIMEOUT
+    run 5: TIMEOUT
+
+  Case: Q3-B
+    warm-up 1: 0.00s  rows=9  status=OK
+    warm-up 2: 0.00s  rows=9  status=OK
+    warm-up 3: 0.00s  rows=9  status=OK
+    run 1: 3.7 ms  rows=9
+    run 2: 4.4 ms  rows=9
+    run 3: 3.9 ms  rows=9
+    run 4: 3.9 ms  rows=9
+    run 5: 3.9 ms  rows=9
+    → median=3.9ms  min=3.7ms  max=4.4ms
+
+  Case: Q3-E
+    warm-up 1: 0.00s  rows=9  status=OK
+    warm-up 2: 0.00s  rows=9  status=OK
+    warm-up 3: 0.00s  rows=9  status=OK
+    run 1: 4.4 ms  rows=9
+    run 2: 4.0 ms  rows=9
+    run 3: 3.7 ms  rows=9
+    run 4: 4.1 ms  rows=9
+    run 5: 3.9 ms  rows=9
+    → median=4.0ms  min=3.7ms  max=4.4ms
+
+  Case: Q4-B-d4
+    warm-up 1: 0.01s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 3.9 ms  rows=5
+    run 2: 3.5 ms  rows=5
+    run 3: 3.5 ms  rows=5
+    run 4: 3.8 ms  rows=5
+    run 5: 3.5 ms  rows=5
+    → median=3.5ms  min=3.5ms  max=3.9ms
+
+  Case: Q4-B-d6
+    warm-up 1: 0.00s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 3.9 ms  rows=5
+    run 2: 4.1 ms  rows=5
+    run 3: 3.9 ms  rows=5
+    run 4: 5.0 ms  rows=5
+    run 5: 4.1 ms  rows=5
+    → median=4.1ms  min=3.9ms  max=5.0ms
+
+  Case: Q4-B-d8
+    warm-up 1: 0.00s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 4.4 ms  rows=5
+    run 2: 4.2 ms  rows=5
+    run 3: 4.2 ms  rows=5
+    run 4: 4.7 ms  rows=5
+    run 5: 4.5 ms  rows=5
+    → median=4.4ms  min=4.2ms  max=4.7ms
+
+  Case: Q4-B-d10
+    warm-up 1: 0.01s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 4.4 ms  rows=5
+    run 2: 5.2 ms  rows=5
+    run 3: 4.5 ms  rows=5
+    run 4: 4.5 ms  rows=5
+    run 5: 5.1 ms  rows=5
+    → median=4.5ms  min=4.4ms  max=5.2ms
+
+  Case: Q4-E-d4
+    warm-up 1: 0.00s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 3.5 ms  rows=5
+    run 2: 4.3 ms  rows=5
+    run 3: 3.4 ms  rows=5
+    run 4: 3.9 ms  rows=5
+    run 5: 3.8 ms  rows=5
+    → median=3.8ms  min=3.4ms  max=4.3ms
+
+  Case: Q4-E-d6
+    warm-up 1: 0.00s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 3.8 ms  rows=5
+    run 2: 4.8 ms  rows=5
+    run 3: 3.8 ms  rows=5
+    run 4: 4.1 ms  rows=5
+    run 5: 4.1 ms  rows=5
+    → median=4.1ms  min=3.8ms  max=4.8ms
+
+  Case: Q4-E-d8
+    warm-up 1: 0.01s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 4.4 ms  rows=5
+    run 2: 4.5 ms  rows=5
+    run 3: 4.8 ms  rows=5
+    run 4: 4.4 ms  rows=5
+    run 5: 4.6 ms  rows=5
+    → median=4.5ms  min=4.4ms  max=4.8ms
+
+  Case: Q4-E-d10
+    warm-up 1: 0.01s  rows=5  status=OK
+    warm-up 2: 0.00s  rows=5  status=OK
+    warm-up 3: 0.00s  rows=5  status=OK
+    run 1: 4.6 ms  rows=5
+    run 2: 4.5 ms  rows=5
+    run 3: 4.2 ms  rows=5
+    run 4: 4.9 ms  rows=5
+    run 5: 4.8 ms  rows=5
+    → median=4.6ms  min=4.2ms  max=4.9ms
+
+  Case: Q5-B
+    warm-up 1: 0.00s  rows=1  status=OK
+    warm-up 2: 0.00s  rows=1  status=OK
+    warm-up 3: 0.00s  rows=1  status=OK
+    run 1: 3.4 ms  rows=1
+    run 2: 3.5 ms  rows=1
+    run 3: 3.2 ms  rows=1
+    run 4: 3.3 ms  rows=1
+    run 5: 3.3 ms  rows=1
+    → median=3.3ms  min=3.2ms  max=3.5ms
+
+  Case: Q5-E
+    warm-up 1: 0.00s  rows=0  status=OK
+    warm-up 2: 0.00s  rows=0  status=OK
+    warm-up 3: 0.00s  rows=0  status=OK
+    run 1: 2.7 ms  rows=0
+    run 2: 3.3 ms  rows=0
+    run 3: 3.0 ms  rows=0
+    run 4: 3.1 ms  rows=0
+    run 5: 3.1 ms  rows=0
+    → median=3.1ms  min=2.7ms  max=3.3ms
+
+  Case: Q6-B
+    warm-up 1: 0.00s  rows=0  status=OK
+    warm-up 2: 0.00s  rows=0  status=OK
+    warm-up 3: 0.00s  rows=0  status=OK
+    run 1: 3.8 ms  rows=0
+    run 2: 3.5 ms  rows=0
+    run 3: 4.5 ms  rows=0
+    run 4: 3.7 ms  rows=0
+    run 5: 3.7 ms  rows=0
+    → median=3.7ms  min=3.5ms  max=4.5ms
+
+  Case: Q6-E
+    warm-up 1: 0.00s  rows=0  status=OK
+    warm-up 2: 0.00s  rows=0  status=OK
+    warm-up 3: 0.00s  rows=0  status=OK
+    run 1: 2.9 ms  rows=0
+    run 2: 3.1 ms  rows=0
+    run 3: 2.8 ms  rows=0
+    run 4: 2.7 ms  rows=0
+    run 5: 3.0 ms  rows=0
+    → median=2.9ms  min=2.7ms  max=3.1ms
+
+  Case: Q7-B-b4
+    warm-up 1: 0.01s  rows=0  status=OK
+    warm-up 2: 0.00s  rows=0  status=OK
+    warm-up 3: 0.01s  rows=0  status=OK
+    run 1: 5.3 ms  rows=0
+    run 2: 4.7 ms  rows=0
+    run 3: 5.2 ms  rows=0
+    run 4: 5.9 ms  rows=0
+    run 5: 4.9 ms  rows=0
+    → median=5.2ms  min=4.7ms  max=5.9ms
+
+  Case: Q7-B-b6
+    warm-up 1: 0.01s  rows=1  status=OK
+    warm-up 2: 0.01s  rows=1  status=OK
+    warm-up 3: 0.01s  rows=1  status=OK
+    run 1: 6.1 ms  rows=1
+    run 2: 6.3 ms  rows=1
+    run 3: 6.7 ms  rows=1
+    run 4: 6.3 ms  rows=1
+    run 5: 6.2 ms  rows=1
+    → median=6.3ms  min=6.1ms  max=6.7ms
+
+  Case: Q7-E-b4
+    warm-up 1: 0.00s  rows=0  status=OK
+    warm-up 2: 0.01s  rows=0  status=OK
+    warm-up 3: 0.00s  rows=0  status=OK
+    run 1: 5.5 ms  rows=0
+    run 2: 5.1 ms  rows=0
+    run 3: 4.7 ms  rows=0
+    run 4: 4.9 ms  rows=0
+    run 5: 4.6 ms  rows=0
+    → median=4.9ms  min=4.6ms  max=5.5ms
+
+  Case: Q7-E-b6
+    warm-up 1: 0.01s  rows=1  status=OK
+    warm-up 2: 0.01s  rows=1  status=OK
+    warm-up 3: 0.01s  rows=1  status=OK
+    run 1: 10.8 ms  rows=1
+    run 2: 11.0 ms  rows=1
+    run 3: 10.8 ms  rows=1
+    run 4: 10.8 ms  rows=1
+    run 5: 11.0 ms  rows=1
+    → median=10.8ms  min=10.8ms  max=11.0ms
+
+Results saved: /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/timing_results.csv
+
+=== TIMING SUMMARY (median ms) ===
+Case                    PG med ms   NEO med ms   PG/NEO ratio
+--------------------------------------------------------------
+Q1-B                          0.5          3.5           0.13x
+Q1-E                          0.2          3.6           0.06x
+Q2-month                   8222.6          nan            nanx
+Q3-B                          1.0          3.9           0.25x
+Q3-E                          0.4          4.0           0.10x
+Q4-B-d10                   5144.9          4.5        1154.61x
+Q4-B-d4                    2050.0          3.5         577.71x
+Q4-B-d6                    3034.1          4.1         737.44x
+Q4-B-d8                    4082.2          4.4         938.12x
+Q4-E-d10                   5242.8          4.6        1139.07x
+Q4-E-d4                    2019.9          3.8         530.18x
+Q4-E-d6                    3298.6          4.1         813.83x
+Q4-E-d8                    4093.1          4.5         904.48x
+Q5-B                          1.4          3.3           0.42x
+Q5-E                          0.3          3.1           0.10x
+Q6-B                          0.8          3.7           0.22x
+Q6-E                          0.3          2.9           0.09x
+Q7-B-b4                     400.2          5.2          77.32x
+Q7-B-b6                   35398.1          6.3        5660.71x
+Q7-E-b4                     414.3          4.9          84.51x
+Q7-E-b6                   36131.1         10.8        3349.10x
+
+=== EXPLAIN plans (collected outside timing) ===
+
+-- PostgreSQL EXPLAIN (ANALYZE, BUFFERS): Q2 --
+Finalize GroupAggregate  (cost=1253657.82..1362684.52 rows=406286 width=48) (actual time=9205.401..9207.980 rows=30 loops=1)
+  Group Key: (to_char((to_timestamp((occurred_at)::double precision) AT TIME ZONE 'Africa/Kigali'::text), 'YYYY-MM-DD'::text))
+  Buffers: shared hit=16 read=147136
+  ->  Gather Merge  (cost=1253657.82..1348464.51 rows=812572 width=48) (actual time=9205.388..9207.935 rows=90 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=16 read=147136
+        ->  Sort  (cost=1252657.80..1253673.51 rows=406286 width=48) (actual time=9195.642..9195.646 rows=30 loops=3)
+              Sort Key: (to_char((to_timestamp((occurred_at)::double precision) AT TIME ZONE 'Africa/Kigali'::text), 'YYYY-MM-DD'::text))
+              Sort Method: quicksort  Memory: 26kB
+              Buffers: shared hit=16 read=147136
+              Worker 0:  Sort Method: quicksort  Memory: 26kB
+              Worker 1:  Sort Method: quicksort  Memory: 26kB
+              ->  Partial HashAggregate  (cost=1063953.88..1202309.42 rows=406286 width=48) (actual time=9195.160..9195.445 rows=30 loops=3)
+                    Group Key: to_char((to_timestamp((occurred_at)::double precision) AT TIME ZONE 'Africa/Kigali'::text), 'YYYY-MM-DD'::text)
+                    Planned Partitions: 8  Batches: 1  Memory Usage: 1561kB
+                    Buffers: shared read=147136
+                    Worker 0:  Batches: 1  Memory Usage: 1561kB
+                    Worker 1:  Batches: 1  Memory Usage: 1561kB
+                    ->  Parallel Seq Scan on transfers  (cost=0.00..313830.16 rows=8334708 width=36) (actual time=5.890..7332.668 rows=6667767 loops=3)
+                          Buffers: shared read=147136
+Planning:
+  Buffers: shared hit=148 read=25
+Planning Time: 6.824 ms
+Execution Time: 9209.557 ms
+
+-- Neo4j PROFILE: Q2 --
+{'day': '2026-09-01', 'tx_count': 666667, 'total_rwf': 7683326000}
+{'day': '2026-09-02', 'tx_count': 666667, 'total_rwf': 7678846900}
+{'day': '2026-09-03', 'tx_count': 666666, 'total_rwf': 7665877900}
+{'day': '2026-09-04', 'tx_count': 666667, 'total_rwf': 7665199000}
+{'day': '2026-09-05', 'tx_count': 666667, 'total_rwf': 7679091900}
+
+-- PostgreSQL EXPLAIN (ANALYZE, BUFFERS): Q4-B-d10 --
+GroupAggregate  (cost=563656.63..563656.70 rows=4 width=16) (actual time=10314.315..10314.461 rows=5 loops=1)
+  Group Key: cu.region
+  Buffers: shared hit=86115 read=2920, temp read=15140 written=15140
+  CTE walk
+    ->  Recursive Union  (cost=0.00..563600.94 rows=801 width=40) (actual time=0.004..10269.542 rows=1187 loops=1)
+          Buffers: shared hit=80995 read=2845, temp read=15140 written=15140
+          ->  Result  (cost=0.00..0.01 rows=1 width=40) (actual time=0.002..0.002 rows=1 loops=1)
+          ->  Hash Join  (cost=7269.27..56359.29 rows=80 width=40) (actual time=294.980..931.296 rows=202 loops=11)
+                Hash Cond: (("*SELECT* 1".text = w_1.kind) AND ("*SELECT* 1".customer_id = w_1.id))
+                Buffers: shared hit=80995 read=2845, temp read=15140 written=15140
+                ->  Append  (cost=7269.00..48354.02 rows=1067200 width=72) (actual time=88.293..856.617 rows=1067200 loops=10)
+                      Buffers: shared hit=80995 read=2845, temp read=15140 written=15140
+                      ->  Subquery Scan on "*SELECT* 1"  (cost=7269.00..17085.01 rows=248000 width=72) (actual time=88.292..309.322 rows=248000 loops=10)
+                            Buffers: shared hit=24963 read=1277, temp read=7570 written=7570
+                            ->  Hash Join  (cost=7269.00..14605.01 rows=248000 width=72) (actual time=88.291..266.871 rows=248000 loops=10)
+                                  Hash Cond: (a_1.customer_id = c.customer_id)
+                                  Buffers: shared hit=24963 read=1277, temp read=7570 written=7570
+                                  ->  Seq Scan on accounts a_1  (cost=0.00..3856.00 rows=248000 width=8) (actual time=0.005..37.308 rows=248000 loops=10)
+                                        Buffers: shared hit=13731 read=29
+                                  ->  Hash  (cost=3528.00..3528.00 rows=228000 width=4) (actual time=88.028..88.028 rows=228000 loops=10)
+                                        Buckets: 262144  Batches: 2  Memory Usage: 6066kB
+                                        Buffers: shared hit=11232 read=1248, temp written=3330
+                                        ->  Seq Scan on customers c  (cost=0.00..3528.00 rows=228000 width=4) (actual time=0.035..31.215 rows=228000 loops=10)
+                                              Buffers: shared hit=11232 read=1248
+                      ->  Subquery Scan on "*SELECT* 2"  (cost=7269.00..17085.01 rows=248000 width=72) (actual time=88.628..307.831 rows=248000 loops=10)
+                            Buffers: shared hit=26240, temp read=7570 written=7570
+                            ->  Hash Join  (cost=7269.00..14605.01 rows=248000 width=72) (actual time=88.627..266.257 rows=248000 loops=10)
+                                  Hash Cond: (a_2.customer_id = c_1.customer_id)
+                                  Buffers: shared hit=26240, temp read=7570 written=7570
+                                  ->  Seq Scan on accounts a_2  (cost=0.00..3856.00 rows=248000 width=8) (actual time=0.004..36.547 rows=248000 loops=10)
+                                        Buffers: shared hit=13760
+                                  ->  Hash  (cost=3528.00..3528.00 rows=228000 width=4) (actual time=87.235..87.235 rows=228000 loops=10)
+                                        Buckets: 262144  Batches: 2  Memory Usage: 6066kB
+                                        Buffers: shared hit=12480, temp written=3330
+                                        ->  Seq Scan on customers c_1  (cost=0.00..3528.00 rows=228000 width=4) (actual time=0.008..30.331 rows=228000 loops=10)
+                                              Buffers: shared hit=12480
+                      ->  Seq Scan on account_devices ad  (cost=0.00..4424.00 rows=285600 width=72) (actual time=0.203..44.655 rows=285600 loops=10)
+                            Buffers: shared hit=14112 read=1568
+                      ->  Seq Scan on account_devices ad_1  (cost=0.00..4424.00 rows=285600 width=72) (actual time=0.003..44.205 rows=285600 loops=10)
+                            Buffers: shared hit=15680
+                ->  Hash  (cost=0.22..0.22 rows=3 width=40) (actual time=0.042..0.042 rows=87 loops=11)
+                      Buckets: 1024  Batches: 1  Memory Usage: 20kB
+                      ->  WorkTable Scan on walk w_1  (cost=0.00..0.22 rows=3 width=40) (actual time=0.003..0.018 rows=87 loops=11)
+                            Filter: (depth < '10'::smallint)
+                            Rows Removed by Filter: 21
+  ->  Sort  (cost=55.69..55.70 rows=4 width=12) (actual time=10314.268..10314.324 rows=649 loops=1)
+        Sort Key: cu.region, w.id
+        Sort Method: quicksort  Memory: 45kB
+        Buffers: shared hit=86115 read=2920, temp read=15140 written=15140
+        ->  Nested Loop  (cost=0.84..55.65 rows=4 width=12) (actual time=2047.070..10313.202 rows=649 loops=1)
+              Buffers: shared hit=86112 read=2920, temp read=15140 written=15140
+              ->  Nested Loop  (cost=0.42..53.78 rows=4 width=8) (actual time=2046.208..10275.306 rows=649 loops=1)
+                    Buffers: shared hit=83591 read=2845, temp read=15140 written=15140
+                    ->  CTE Scan on walk w  (cost=0.00..20.03 rows=4 width=4) (actual time=2046.168..10270.737 rows=649 loops=1)
+                          Filter: ((id <> 147228) AND (kind = 'Account'::text))
+                          Rows Removed by Filter: 538
+                          Buffers: shared hit=80995 read=2845, temp read=15140 written=15140
+                    ->  Index Scan using pk_accounts on accounts a  (cost=0.42..8.44 rows=1 width=8) (actual time=0.006..0.006 rows=1 loops=649)
+                          Index Cond: (account_id = w.id)
+                          Buffers: shared hit=2596
+              ->  Index Scan using pk_customers on customers cu  (cost=0.42..0.47 rows=1 width=12) (actual time=0.057..0.057 rows=1 loops=649)
+                    Index Cond: (customer_id = a.customer_id)
+                    Buffers: shared hit=2521 read=75
+Planning:
+  Buffers: shared hit=153 read=20
+Planning Time: 9.976 ms
+Execution Time: 10314.713 ms
+
+-- Neo4j PROFILE: Q4-B-d10 --
+{'region': 'Eastern', 'reached_accounts': 45}
+{'region': 'Kigali', 'reached_accounts': 41}
+{'region': 'Northern', 'reached_accounts': 46}
+{'region': 'Southern', 'reached_accounts': 57}
+{'region': 'Western', 'reached_accounts': 39}
+
+-- PostgreSQL EXPLAIN (ANALYZE, BUFFERS): Q7-B-b6 --
+Aggregate  (cost=1770.46..1770.47 rows=1 width=4) (actual time=83629.645..83629.648 rows=1 loops=1)
+  Filter: (min(bfs.depth) IS NOT NULL)
+  Buffers: shared hit=59810562 read=247691, temp read=887 written=1827
+  CTE bfs
+    ->  Recursive Union  (cost=0.00..1701.32 rows=3071 width=8) (actual time=0.003..83420.227 rows=427955 loops=1)
+          Buffers: shared hit=59810562 read=247691, temp read=887 written=887
+          ->  Result  (cost=0.00..0.01 rows=1 width=8) (actual time=0.001..0.002 rows=1 loops=1)
+          ->  Nested Loop  (cost=0.98..167.06 rows=307 width=8) (actual time=4.219..11474.674 rows=1454806 loops=7)
+                Buffers: shared hit=59810562 read=247691, temp read=887 written=2
+                ->  Nested Loop  (cost=0.56..26.68 rows=317 width=8) (actual time=4.210..6585.487 rows=2081255 loops=7)
+                      Buffers: shared hit=1535426 read=247691, temp read=887 written=2
+                      ->  WorkTable Scan on bfs b  (cost=0.00..0.25 rows=3 width=8) (actual time=3.945..20.197 rows=26851 loops=7)
+                            Filter: ((depth < '6'::smallint) AND (account_id <> 186823))
+                            Rows Removed by Filter: 34286
+                            Buffers: temp read=887 written=2
+                      ->  Index Only Scan using idx_t_sender on transfers t  (cost=0.56..7.75 rows=106 width=8) (actual time=0.152..0.231 rows=78 loops=187956)
+                            Index Cond: (sender_id = b.account_id)
+                            Heap Fetches: 0
+                            Buffers: shared hit=1535426 read=247691
+                ->  Index Scan using pk_accounts on accounts a  (cost=0.42..0.44 rows=1 width=4) (actual time=0.002..0.002 rows=1 loops=14568784)
+                      Index Cond: (account_id = t.receiver_id)
+                      Filter: (role = 'person'::text)
+                      Rows Removed by Filter: 0
+                      Buffers: shared hit=58275136
+  ->  CTE Scan on bfs  (cost=0.00..69.10 rows=15 width=4) (actual time=2912.088..83629.637 rows=2 loops=1)
+        Filter: (account_id = 186823)
+        Rows Removed by Filter: 427953
+        Buffers: shared hit=59810562 read=247691, temp read=887 written=1827
+Planning:
+  Buffers: shared hit=20 read=8
+Planning Time: 6.401 ms
+Execution Time: 83639.251 ms
+
+-- Neo4j PROFILE: Q7-B-b6 --
+{'min_length': 5}

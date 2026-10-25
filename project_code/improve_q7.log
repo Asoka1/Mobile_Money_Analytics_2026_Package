@@ -1,0 +1,31 @@
+=== Q7 SQL Improvement (deduplicating account-depth states) ===
+
+Sets: B, E  |  Bounds: 4, 6
+
+-- ORIGINAL --
+  Set B bound 4: length=none  median=400.6ms  min=398.5ms  max=406.5ms
+  Set B bound 6: length=5  median=35245.6ms  min=35089.6ms  max=38323.0ms
+  Set E bound 4: length=none  median=419.4ms  min=411.2ms  max=612.8ms
+  Set E bound 6: length=5  median=36423.6ms  min=36200.7ms  max=37456.3ms
+
+-- IMPROVED --
+  Set B bound 4: length=none  median=420.3ms  min=417.4ms  max=431.9ms
+  Set B bound 6: length=5  median=40211.4ms  min=39419.7ms  max=42195.1ms
+  Set E bound 4: length=none  median=440.5ms  min=438.7ms  max=566.7ms
+  Set E bound 6: length=5  median=41072.7ms  min=40532.3ms  max=42050.0ms
+
+=== Correctness check (original vs improved) ===
+  MATCH    Set A bound 4: length=3
+  MATCH    Set A bound 6: length=3
+  MISMATCH Set B bound 4: orig=[] impr=[(None,)]
+  MATCH    Set B bound 6: length=5
+  MISMATCH Set C bound 4: orig=[] impr=[(None,)]
+  MATCH    Set C bound 6: length=5
+  MATCH    Set D bound 4: length=3
+  MATCH    Set D bound 6: length=3
+  MISMATCH Set E bound 4: orig=[] impr=[(None,)]
+  MATCH    Set E bound 6: length=5
+  MISMATCH Set F bound 4: orig=[] impr=[(None,)]
+  MATCH    Set F bound 6: length=5
+
+WARNING: mismatches found – review improved version.

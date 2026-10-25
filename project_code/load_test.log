@@ -1,0 +1,62 @@
+
+=== POSTGRESQL | Q4-d10 | clients=1 ===
+  rep=1 clients=1: throughput=0.42/s  med=2382ms  p95=2515ms  correct=7  errors=0  timeouts=0
+  rep=2 clients=1: throughput=0.42/s  med=2375ms  p95=2547ms  correct=7  errors=0  timeouts=0
+  rep=3 clients=1: throughput=0.42/s  med=2405ms  p95=2413ms  correct=7  errors=0  timeouts=0
+  SUMMARY: throughput_med=0.42/s  latency_med_med=2382ms  p95_med=2515ms
+
+=== POSTGRESQL | Q4-d10 | clients=4 ===
+  rep=1 clients=4: throughput=1.52/s  med=2606ms  p95=2676ms  correct=24  errors=0  timeouts=0
+  rep=2 clients=4: throughput=1.52/s  med=2615ms  p95=2691ms  correct=24  errors=0  timeouts=0
+  rep=3 clients=4: throughput=1.50/s  med=2624ms  p95=2892ms  correct=24  errors=0  timeouts=0
+  SUMMARY: throughput_med=1.52/s  latency_med_med=2615ms  p95_med=2691ms
+
+=== POSTGRESQL | Q4-d10 | clients=8 ===
+  rep=1 clients=8: throughput=1.78/s  med=4498ms  p95=5240ms  correct=32  errors=0  timeouts=0
+  rep=2 clients=8: throughput=1.39/s  med=5079ms  p95=5254ms  correct=26  errors=0  timeouts=0
+  rep=3 clients=8: throughput=1.55/s  med=5197ms  p95=5332ms  correct=24  errors=0  timeouts=0
+  SUMMARY: throughput_med=1.55/s  latency_med_med=5079ms  p95_med=5254ms
+
+=== POSTGRESQL | Q4-d10 | clients=16 ===
+  rep=1 clients=16: throughput=1.12/s  med=14176ms  p95=14843ms  correct=32  errors=0  timeouts=0
+  rep=2 clients=16: throughput=1.09/s  med=14589ms  p95=14889ms  correct=32  errors=0  timeouts=0
+  rep=3 clients=16: throughput=1.07/s  med=14555ms  p95=14983ms  correct=31  errors=0  timeouts=0
+  SUMMARY: throughput_med=1.09/s  latency_med_med=14556ms  p95_med=14889ms
+
+=== POSTGRESQL | Q7-b6 | clients=1 ===
+  rep=1 clients=1: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=1  timeouts=0
+  rep=2 clients=1: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=1  timeouts=0
+
+=== POSTGRESQL | Q4-d10 | clients=1 (ALREADY COMPLETE, SKIPPING) ===
+  SUMMARY: throughput_med=0.42/s  latency_med_med=2382ms  p95_med=2515ms
+
+=== POSTGRESQL | Q4-d10 | clients=4 (ALREADY COMPLETE, SKIPPING) ===
+  SUMMARY: throughput_med=1.52/s  latency_med_med=2615ms  p95_med=2691ms
+
+=== POSTGRESQL | Q4-d10 | clients=8 (ALREADY COMPLETE, SKIPPING) ===
+  SUMMARY: throughput_med=1.55/s  latency_med_med=5079ms  p95_med=5254ms
+
+=== POSTGRESQL | Q4-d10 | clients=16 (ALREADY COMPLETE, SKIPPING) ===
+  SUMMARY: throughput_med=1.09/s  latency_med_med=14556ms  p95_med=14889ms
+
+=== POSTGRESQL | Q7-b6 | clients=1 ===
+  rep=1 clients=1: throughput=0.03/s  med=29126ms  p95=29126ms  correct=1  errors=0  timeouts=0
+  rep=2 clients=1: throughput=0.02/s  med=41801ms  p95=41801ms  correct=1  errors=0  timeouts=0
+  rep=3 clients=1: throughput=0.02/s  med=46231ms  p95=46231ms  correct=1  errors=0  timeouts=0
+  SUMMARY: throughput_med=0.02/s  latency_med_med=41801ms  p95_med=41801ms
+
+=== POSTGRESQL | Q7-b6 | clients=4 ===
+  rep=1 clients=4: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=0  timeouts=4
+  rep=2 clients=4: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=0  timeouts=4
+  rep=3 clients=4: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=0  timeouts=4
+  SUMMARY: throughput_med=0.00/s  latency_med_med=nanms  p95_med=nanms
+
+=== POSTGRESQL | Q7-b6 | clients=8 ===
+  rep=1 clients=8: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=0  timeouts=8
+  rep=2 clients=8: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=0  timeouts=8
+  rep=3 clients=8: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=0  timeouts=8
+  SUMMARY: throughput_med=0.00/s  latency_med_med=nanms  p95_med=nanms
+
+=== POSTGRESQL | Q7-b6 | clients=16 ===
+  rep=1 clients=16: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=0  timeouts=16
+  rep=2 clients=16: throughput=0.00/s  med=nanms  p95=nanms  correct=0  errors=16  timeouts=0

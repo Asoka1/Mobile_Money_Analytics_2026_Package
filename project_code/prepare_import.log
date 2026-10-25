@@ -1,0 +1,25 @@
+=== Creating Neo4j import CSVs ===
+
+  written: neo4j_customers.csv
+  written: neo4j_devices.csv
+  written: neo4j_accounts.csv
+  written: neo4j_owns.csv
+  written: neo4j_used_device.csv
+  written: neo4j_transfers.csv
+
+=== Import file preparation complete ===
+Import directory: /Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import
+
+=== Run this command (Neo4j must be STOPPED first) ===
+neo4j-admin database import full neo4j \
+  --id-type=integer \
+  --nodes=Customer=/Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_customers.csv \
+  --nodes=Account=/Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_accounts.csv \
+  --nodes=Device=/Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_devices.csv \
+  --relationships=OWNS=/Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_owns.csv \
+  --relationships=USED_DEVICE=/Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_used_device.csv \
+  --relationships=TRANSFER=/Users/apple2019/Desktop/AUCA2025/Big Data Analytics - New - Sept/Project_2_Mobile_Money_Analytics_2026/Project_2_Mobile_Money_Analytics_2026_Package/project_code/neo4j_import/neo4j_transfers.csv \
+  --overwrite-destination=true
+
+After import, START Neo4j and run setup_neo4j.cypher to create
+constraints and indexes.

@@ -1,0 +1,18 @@
+label, n
+"Customer", 228000
+"Account", 248000
+"Device", 228600
+type, n
+"OWNS", 248000
+"USED_DEVICE", 285600
+"TRANSFER", 20003300
+role, n
+"agent", 2000
+"merchant", 6000
+"person", 240000
+accounts_without_exactly_one_owner
+0
+duplicate_transfer_ids
+0
+total_transfers, earliest_occurred_at, latest_occurred_at, sum_amount_rwf
+20003300, 1788235200, 1790798399, 231482327870

@@ -1,0 +1,22 @@
+# Raw CSV datasets generated locally (must remain local per course specification)
+*.csv
+!project_code/timing_results.csv
+!project_code/load_test_results.csv
+
+# Neo4j import working directory
+neo4j_import/
+*/neo4j_import/
+*.report
+
+# Python compilation and cache
+__pycache__/
+*/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating System files
+.DS_Store
+*/.DS_Store
+._*
+Thumbs.db
