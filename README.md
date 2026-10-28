@@ -13,7 +13,7 @@
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This repository contains the complete forensic and architectural investigation comparing **PostgreSQL 17** (relational RDBMS) and **Neo4j Community 5.26.0** (native graph database) over a large-scale mobile money transaction dataset in Rwanda for September 2026.
 
@@ -28,9 +28,9 @@ This repository contains the complete forensic and architectural investigation c
 
 ---
 
-## 🚀 Key Measured Findings
+## Key Measured Findings
 
-1. **Exact 61-Case Correctness:** All 61 analytical queries (Q1–Q7) matched **100% identically** between PostgreSQL and Neo4j (`compare.py` → 61/61 PASS).
+1. **Exact 61-Case Correctness:** All 61 analytical queries (Q1–Q7) matched between PostgreSQL and Neo4j (`compare.py`).
 2. **Relational Aggregation Superiority:** PostgreSQL executes whole-dataset daily rollups (Q2, 20M rows) in **1.4s vs 6.2s** (4.4× faster than Neo4j) via BRIN-indexed parallel scans.
 3. **Graph Traversal Superiority:** Neo4j outperforms PostgreSQL by up to **5,660×** on multi-hop network pathfinding:
    - **Q4 Depth-10 Traversal:** `2.0 ms` (Neo4j) vs `2,382 ms` (PostgreSQL) — **1,191× speedup**.
@@ -43,7 +43,7 @@ This repository contains the complete forensic and architectural investigation c
 
 ---
 
-## 📊 Visualizations
+## Visualizations
 
 All 5 high-resolution analytical charts are available in `project_code/`:
 - `chart_q2_daily.png` — Daily transfer count & value across September 2026.
@@ -51,12 +51,10 @@ All 5 high-resolution analytical charts are available in `project_code/`:
 - `chart_load_Q4-d10.png` — Multi-client concurrency throughput and $p95$ latency for Q4 depth 10.
 - `chart_load_Q7-b6.png` — Multi-client concurrency throughput and $p95$ latency for Q7 bound 6.
 
-The official 7-page submission report is compiled at:  
-👉 **`project_code/Project_2_Final_Report_Group_13.pdf`**
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -91,7 +89,7 @@ The official 7-page submission report is compiled at:
 
 ---
 
-## ⚡ Execution Order & Reproduction
+## Execution Order & Reproduction
 
 To reproduce all benchmarks and reports from a fresh clone:
 
@@ -135,7 +133,7 @@ python3 generate_report_pdf.py
 
 ---
 
-## ⚖️ Ethics & Academic Integrity
+## Ethics & Academic Integrity
 
 - The data generator (`mobile_money_generator.py`) is completely unchanged.
 - All database queries are fully parameterized without hard-coded results.
