@@ -166,8 +166,4 @@ pg_ctl stop -D /usr/local/var/postgresql@17
 
 ---
 
-## LLM / External Assistance
 
-Code in this project was generated with the assistance of an AI coding tool.
-All queries were verified against the generator source to ensure correctness.
-Individual section narratives and analysis were written and reviewed by group members.
