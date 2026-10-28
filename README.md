@@ -7,9 +7,9 @@
 **Group:** Group 13  
 
 #### Group Members:
-1. **Asoka Niyonsaba Jean Claude** (Student ID: 101410) — *Query Algorithms, SQL Optimization, Relational Benchmarking*
-2. **Eric Kwizera** (Student ID: 101395) — *Multiprocessing Concurrency Engine, Load Testing & Scalability Analysis*
-3. **Gisele Ishimwe** (Student ID: 101407) — *Forensic Network Topology, AML Cycle Detection & Decision Matrix*
+1. **Asoka Niyonsaba Jean Claude** — *Query Algorithms, SQL Optimization, Relational Benchmarking*
+2. **Eric Kwizera** — *Multiprocessing Concurrency Engine, Load Testing & Scalability Analysis*
+3. **Gisele Ishimwe** — *Forensic Network Topology, AML Cycle Detection & Decision Matrix*
 
 ---
 
